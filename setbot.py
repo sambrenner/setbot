@@ -27,10 +27,10 @@ def solve(cards):
             if (i == j):
                 continue
 
-            # find the card needed to complete the set from the two we've picked
+            # determine the card needed to complete the set from the two we've picked
             desired = getDesiredCardForCards(cards[i], cards[j])
 
-            # find that card
+            # find that card from the visible cards
             # we also could do this with `if desired in cards`, but this way we will get the index of the desired card
             for k in range(len(cards)):
 
